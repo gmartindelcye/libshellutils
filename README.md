@@ -1,13 +1,12 @@
 # libshellutils
 Different shell functions to make better scripts
 
-========
 Commands
 ========
 
 
 echoc
-=====
+-----
 
 **echoes a message in a color**
 
@@ -31,7 +30,7 @@ echoc
 
 
 servicecheck
-============
+------------
 
 **returns a color message depending if a service is active or not**
 
@@ -42,17 +41,16 @@ servicecheck
       servicecheck postgresql
 
 
-=======
 Library
 =======
 
 print_color
-===========
+-----------
 
 **echoc** uses this function so the parameters and results are the same.
 
 
 check_service_status
-====================
+--------------------
 
 **servicecheck** uses this function so the parameters and results are the same.

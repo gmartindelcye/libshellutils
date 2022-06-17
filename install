@@ -19,6 +19,6 @@ cp ./servicecheck ~/bin
 chmod +x ~/bin/*
 
 # ------------------- Add bin path --------------------
-export PATH=~/bin:$PATH
+echo "export PATH=$PATH:$HOME/bin" >> ~/.bashrc
 
 exit 0
