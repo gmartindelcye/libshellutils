@@ -8,12 +8,12 @@ mkdir ~/bin
 mkdir -p ~/lib/sh
 
 # --------------- Move library to place ---------------
-mv ./libshellutils.sh ~/lib/sh
+cp ./libshellutils.sh ~/lib/sh
 
 # --------------- Move Scripts to place ---------------
-mv ./echoc ~/bin
-mv ./servicecheck ~/bin
-#mv portcheck ~/bin
+cp ./echoc ~/bin
+cp ./servicecheck ~/bin
+#cp portcheck ~/bin
 
 # --------- Add execute permission to scripts ---------
 chmod +x ~/bin/*
