@@ -47,7 +47,7 @@ function print_color(){
 function check_service_status() {
   is_service_active=$(systemctl is-active $1)
 
-  if [ $is_service_active = "active"]; then
+  if [[ $is_service_active = "active" ]]; then
     print_color "green" "$1 Service is active"
   else
     print_color "red" "$1 Service is not active"
