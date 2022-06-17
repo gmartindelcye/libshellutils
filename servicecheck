@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+#include lib
+. ~/lib/sh/libshellutils.sh
+
+#######################################
+# Checks a service to be running and
+# echoes status message
+# Arguments:
+#   SERVICE
+# Outputs:
+#   Writes to stdout
+#######################################
+check_service_status $1

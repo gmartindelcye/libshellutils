@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# Creates directories and install libshellutils.sh library
+# and other little useful scripts
+
+# ------------ Creates Directory Structure ------------ 
+cd ~
+mkdir ~/bin
+mkdir -p ~/lib/sh
+
+# --------------- Move library to place ---------------
+mv libshellutils.sh ~/lib/sh
+
+# --------------- Move Scripts to place ---------------
+mv echoc ~/bin
+mv servicecheck ~/bin
+mv portcheck ~/bin
+
+# --------- Add execute permission to scripts ---------
+chmod +x ~/bin/*
+
+# ------------------- Add bin path --------------------
+export PATH=~/bin:$PATH
+
+exit 0
