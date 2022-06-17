@@ -1,7 +1,7 @@
 #
 #
 #
-
+MESSAGE=$2
 
 #######################################
 # Echo a message in the specified color
@@ -33,7 +33,7 @@ function print_color(){
       "*")            COLOR=$NC ;;
   esac
  
-  echo -e "${COLOR} $2 ${NC}"
+  echo -e "${COLOR} $MESSAGE ${NC}"
 }
 
 #######################################
